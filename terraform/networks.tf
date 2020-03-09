@@ -14,5 +14,13 @@ module "vpc" {
   database_subnets = var.database_subnets
 
   create_database_subnet_group = false
+  public_subnet_tags = {
+    env = "dev"
+    author = "mohitdhingra27"
+  }
+  private_subnet_tags = {
+    env = "dev"
+    author = "mohitdhingra27"
+  }
 }
 
