@@ -1,6 +1,3 @@
-variable "access_key" {}
-variable "secret_key" {}
-
 variable "region" {
   default = "eu-west-1"
 }
@@ -17,8 +14,14 @@ variable "public_subnets" {
 variable "database_subnets" {
   default = ["10.9.20.0/24", "10.9.21.0/24"]
 }
-variable "sshpubkey_file" {}
+
 
 variable "instance_type" {
   default = "t2.micro"
+}
+
+variable "AWS_ACCESS_KEY" {
+}
+
+variable "AWS_SECRET_KEY" {
 }

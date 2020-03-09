@@ -1,7 +1,7 @@
 resource "aws_security_group" "packer_build" {
   name        = "packer-build"
   description = "Security Group for Packer Builds"
-  vpc_id      = "vpc-090377310c7acf853"
+  vpc_id      = module.vpc.vpc_id
 
   egress {
     from_port   = 0
